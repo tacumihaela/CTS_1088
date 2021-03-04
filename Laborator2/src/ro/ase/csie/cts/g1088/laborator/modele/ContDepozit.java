@@ -28,13 +28,13 @@ public class ContDepozit extends ContBancar implements Profitabil{
 	}
 
 	@Override
-	public void transfer(Cont destinatie, Double valoare) throws ExceptieFonduriInsuficiente {
-		if(this==destinatie) {
+	public void transfer(Cont destinatie, Double valoare) throws ExceptieFonduriInsuficiente, ExceptieTransferIlegal {
+		if(this == destinatie) {
 			throw new ExceptieTransferIlegal();
 		}
 		this.extrage(valoare);
 		destinatie.alimenteaza(valoare);
-
+		
 	}
 
 	@Override
