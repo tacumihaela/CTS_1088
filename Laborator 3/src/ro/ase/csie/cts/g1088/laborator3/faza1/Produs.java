@@ -2,6 +2,7 @@ package ro.ase.csie.cts.g1088.laborator3.faza1;
 
 import ro.ase.csie.cts.g1088.laborator3.exceptii.ExceptiePretInvalid;
 import ro.ase.csie.cts.g1088.laborator3.exceptii.ExceptieVechimeClient;
+import ro.ase.csie.cts.g1088.laborator3.faza3.servicii.InterfataMarketing;
 
 public class Produs {
 	
@@ -45,4 +46,6 @@ public class Produs {
 	    
 	    return pretFinal;
 	  }
+
+
 }
