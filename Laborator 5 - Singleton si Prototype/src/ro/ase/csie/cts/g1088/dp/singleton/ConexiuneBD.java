@@ -23,7 +23,7 @@ public class ConexiuneBD {
 	
 	
 	//versiune lazy
-	public static synchronized ConexiuneBD getConexiune() { //DACA nu e static nu putem apela
+	public static ConexiuneBD getConexiune() { //DACA nu e static nu putem apela
 		if(conexiune == null) {
 			//datele se pot prelua din fisiere de configurare
 			conexiune = new ConexiuneBD("10.0.0.1","cts");

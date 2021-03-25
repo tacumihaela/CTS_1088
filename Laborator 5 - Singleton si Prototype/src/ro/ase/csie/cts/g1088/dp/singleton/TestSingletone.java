@@ -6,8 +6,8 @@ public class TestSingletone {
 		//ConexiuneBD conexiune1 = new ConexiuneBD("10.0.0.1", "cts");
 		//ConexiuneBD conexiune2 = new ConexiuneBD("10.0.0.1", "cts");
 	
-		ConexiuneBD conexiune1 = new ConexiuneBD.getConexiune();
-		ConexiuneBD conexiune2 = new ConexiuneBD.getConexiune();
+		ConexiuneBD conexiune1 = ConexiuneBD.getConexiune();
+		ConexiuneBD conexiune2 = ConexiuneBD.getConexiune();
 	
 		
 		if(conexiune1==conexiune2) {
