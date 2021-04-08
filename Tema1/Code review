@@ -1,0 +1,18 @@
+0. Source->Format - pentru formatarea codului (spatiere, identare, metode separate printr-o singura linie si acolade)
+Make sure the code formatting is applied;
+1. Declararea semnficicativa a variabilelor, ex: valoare_imprumut->valoareImprumut; Use Intention-Revealing Names
+2. Declararea variabilelor pe o singura linie;
+2. Constructorul cu parametri repozitionat dupa declararea variabilelor;
+3. Modificare constructor: folosirea this și stabilirea unei convenții de nume pentru parametrii constructorului;, 
+ex: valoare->valoareImprumut
+4. Denumirea metodelor sa fie sugestiva, ex: imprumut()->getValoareImprumut; Use Intention-Revealing Names
+5. Eliminare comentarii;
+6. La get: syso + return, elimin syso - Do one Thing
+7. Adaugare referinte ex: this.rata;
+8. Eliminare variabila temp;
+9. Denumirea functiilor sa fie sugestiva, ex: calculeaza()->calculeazaComisionTotal SOLID - Single Responsability
+Principle; Use Intention-Revealing Names
+10. Eliminare metoda print() fiind inutila - YAGNI;
+11. ComisionTotal 1,25% - > 0,0125;
+12. Creare Enum tip Account, adaugare variabile statice SOLID; Use marker interfaces to define types
+13. Always override toString
