@@ -6,6 +6,8 @@ spatiul/ memorie=> flyweight
 - modelele 3D sunt afisate pe ecran la coordonate diferite si pot avea texturi de culori diferite
 - trebuie gasita o solutie eficienta privind gestiunea acestor situatii
 
+
+proxy(este vazut ca un intermediar)
 2. Adaugarea unui filtru suplimentar pentru login
 - in acest moment login-ul se face prin username si parola si in cazul in care parola este gresita utilizatorul poate incerca de mai multe ori
 - exista atacuri asupra conturilor jucatorilor iar atacatorul ghiceste parola aferenta contului dupa mai multe incercari
