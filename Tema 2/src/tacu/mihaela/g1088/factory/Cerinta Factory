@@ -1,0 +1,16 @@
+Titlul: Dezvoltarea unei aplicatii web pentru cinema
+
+Problema:
+Implementarea unui mecansim prin care generarea biletelor(obiectelor) 
+este transparenta pentru client.
+obiectele sunt referite printr-o interfata comuna; clase concrete reprezinta
+o familie de obiecte definita in jurul interfetei comune;
+
+
+Avantaje:
+diferitele tipuri de obiecte sunt gestionate unitar prin interfata comuna –
+noi tipuri pot fi adaugate fara modificari
+
+Dezavantaje:
+-numar mare de clase implicate
+-Nivel de complexitate ridicat

@@ -1,0 +1,12 @@
+Titlul: Dezvoltarea unei aplicatii web pentru cinema
+
+Problema:
+Adaugarea unui filtru suplimentar pentru login
+- in acest moment login-ul se face prin username si parola si in cazul in care parola este gresita utilizatorul poate incerca de mai multe ori
+- exista atacuri asupra conturilor clientilor iar atacatorul ghiceste parola aferenta contului dupa mai multe incercari
+- se doreste modificarea modulului de login prin limitarea numarului de incercari la maxim 3
+- modulul de login existent trebuie modifica
+
+Avantaje:
+controleaza accesul la metodele unui obiect sau la
+anumite obiecte

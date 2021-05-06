@@ -1,0 +1,17 @@
+Titlul: Dezvoltarea unei aplicatii web pentru cinema
+
+Problema:
+
+Toate filmele au asociat un intreruperi
+- in joc pot aparea mai multe instante ale aceluiasi film
+- crearea filmelor este un proces costisitor deoarece presupune incarcarea si generarea modelului
+- trebuie gasita o solutie eficienta pentru a crea mai multe instante ale aceluiasi film
+
+Avantaje:
+-Creare rapida de obiecte identice (valori) prin clonare
+-Evita apelul explicit al constructorului
+-Poate fi construita o colectie de prototipuri care sa fie utilizata pentru
+a genera obiecte noi
+Dezavantaje:
+-Atentie la crearea de obiecte ce partajeaza aceleasi resurse –
+shallow copy

@@ -1,0 +1,17 @@
+Titlul: Dezvoltarea unei aplicatii web pentru cinema
+
+Problema:
+Crearea unei singure instante pentru clasa cinema prin care sa
+fie gestionata o accesare în mod centralizat;
+Solutia se bazeazã pe existenta unei singure instante ce poate fi
+creata o singura data dar care poate fi referita de mai multe ori;
+
+Avantaje:
+-Gestiune centralizata a unei resurse printr-o instanta unica
+-Controlul strict al instantierii unei clase – o singura data
+-Nu permite duplicarea instantelor
+
+Dezavantaje:
+-In multi-threading pot aparea probleme de sincronizare sau cooperare
+daca singleton-ul este partajat
+-Poate deveni un bottleneck care sa afecteze performanta aplicatiei
