@@ -43,6 +43,7 @@ public class Caracter3D implements Cloneable{
 		return sb.toString();
 	}
 
+	//OBLIGATORIU!!
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		//NU prin acelasi constructor

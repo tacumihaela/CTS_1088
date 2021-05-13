@@ -9,13 +9,14 @@ public class ConexiuneBD {
 	//versiune eager
 	//private static Conexiune conexiune = new ConexiuneBD("10.0.0.1","cts");
 	
-	private static ConexiuneBD conexiune = null;
+	//un atribut static, privat, de tipul clasei ce reprezinta instanta unica
+	private static ConexiuneBD conexiune = null; //obligatoriu
 	
 	private ConexiuneBD() {
 		
 	}
 	
-	private ConexiuneBD(String ip, String denumire) {
+	private ConexiuneBD(String ip, String denumire) { //privat, apelabil doar din clasa
 		System.out.println("apel constuctor");
 		this.ip = ip;
 		this.denumire = denumire;
@@ -23,7 +24,8 @@ public class ConexiuneBD {
 	
 	
 	//versiune lazy
-	public static synchronized ConexiuneBD getConexiune() { //DACA nu e static nu putem apela
+	//getInstance(); metoda publica ce da acces la instanta unica(creata la primul apel al metodei)
+	public static synchronized ConexiuneBD getConexiune() { 
 		if(conexiune == null) {
 			//datele se pot prelua din fisiere de configurare
 			conexiune = new ConexiuneBD("10.0.0.1","cts");

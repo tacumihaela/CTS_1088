@@ -14,11 +14,11 @@ public class SuperErou {
 	private InterfataSuperPutere superPutere;
 	private InterfataSuperPutere superSuperPutere;
 
-	private SuperErou() {
+	public SuperErou() {
 
 	}
 
-	private SuperErou(String nume, 
+	public SuperErou(String nume, 
 			int puncteViata, 
 			boolean esteErouNegativ, 
 			boolean esteRanit,
