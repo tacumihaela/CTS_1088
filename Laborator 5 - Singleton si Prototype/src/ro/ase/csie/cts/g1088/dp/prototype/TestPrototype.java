@@ -11,7 +11,4 @@ public class TestPrototype {
 		
 		System.out.println("Sfarsit");
 	}
-	
-	
-
 }
