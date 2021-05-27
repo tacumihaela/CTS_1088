@@ -70,7 +70,11 @@ public class Student extends Exception {
 	}
 
 	public int getNotaMinima() {
-		int min = 0;
+		if(this.note==null || this.note.size()==0) {
+			return 0;
+		}
+		
+		int min = this.note.get(0);
 		for (int nota : this.note) {
 			if (min > nota) {
 				min = nota;
