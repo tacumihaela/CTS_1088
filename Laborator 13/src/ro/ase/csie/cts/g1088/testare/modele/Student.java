@@ -42,14 +42,14 @@ public class Student extends Exception {
 	}
 
 	public void setVarsta(int varsta) throws ExceptieVarsta {
-		if (varsta < MIN_VARSTA) {
+		if (varsta < MIN_VARSTA || varsta>MAX_VARSTA) {
 			throw new ExceptieVarsta();
 		}
 		this.varsta = varsta;
 	}
 
 	public void setNote(ArrayList<Integer> note) throws ExceptieNota {
-		this.note = note;
+		this.note = (ArrayList<Integer>) note.clone();
 	}
 
 	public int getNota(int index) {
